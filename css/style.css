@@ -352,7 +352,7 @@ select .list {
 }
 
 .owl-nav button img:hover {
-    border: 2px solid #E6E8EC;
+    border: 2px solid #E6E8EC !important;
 }
 
 .owl-next {
