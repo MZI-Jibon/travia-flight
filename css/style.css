@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* COMMON STYLES STARTS*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #23262F;
+}
+
+p {
+    color: #777E91;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0%;
+}
+
+.section-heading h2 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.p-20px {
+    padding: 20px;
+}
+
+
+
+
+/* COMMON STYLES ENDS*/
+
+/* NAV STARTS */
+nav .container {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+nav .nav-item {
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+nav .nav-item+.nav-item {
+    margin-right: 22px;
+}
+
+.nav-item span img {
+    width: 14px;
+    margin-right: 12px;
+}
+
+.nav-link {
+    padding: 0 !important;
+    color: #777E91;
+    font-weight: 700;
+}
+
+.nav-link.active {
+    color: #777E91 !important;
+}
+
+.nav-link:hover {
+    color: #58C27D !important;
+}
+
+nav .notification-btn {
+    padding: 8px 10px;
+}
+
+nav .notification-btn span {
+    height: 12px;
+    width: 12px;
+    background: #58C27D;
+}
+
+/* NAV ENDS */
+
+
+/* HERO SECTION STARTS */
+.hero-section img {
+    z-index: -1;
+}
+
+.hero-section {
+    background: linear-gradient(92.61deg, rgba(236, 248, 252, 0.84) 13.1%, rgba(236, 248, 252, 0) 96.07%), url("/images/hero-bg.png");
+    background-size: cover;
+    height: 720px;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: -0.02em;
+    color: #23262F;
+}
+
+.hero-section p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hero-text {
+    top: 115px;
+    left: 80px;
+}
+
+/* HERO SECTION ENDS */
+
+/* FLIGHT SECTION STARTS*/
+
+.flight-booking {
+    width: 100%;
+    margin-top: -220px;
+    padding: 40px;
+    background: linear-gradient(83.59deg, #FCFCFD 36.52%, rgba(252, 252, 253, 0.83) 98.8%);
+    /* Neutrals/8 */
+
+    border: 1px solid #FCFCFD;
+    /* glass/01 */
+
+    box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
+    backdrop-filter: blur(16px);
+}
+
+/* Tabs */
+
+
+ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    overflow: auto;
+}
+
+ul#tabs-nav li {
+    float: left;
+    margin-right: 20px;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+    border-bottom: 1px solid #23262F;
+}
+
+ul#tabs-nav li.active a {
+    color: #23262F;
+}
+
+#tabs-nav li a {
+    text-decoration: none;
+    color: #777E91;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#tabs-content {
+    border-top: 1px solid #E6E8EC;
+    margin-top: -1px;
+    padding-top: 30px;
+}
+
+
+
+.tab-content .btn {
+    background: #fff;
+    border: 2px solid #E6E8EC;
+    border-radius: 50rem;
+}
+
+.tab-content .btn:hover {
+    background: #E6E8EC;
+}
+
+
+.btn-outline-primary {
+    --bs-btn-color: #23262F;
+    --bs-btn-border-color: #E6E8EC;
+    --bs-btn-hover-color: #23262F;
+    --bs-btn-hover-bg: #E6E8EC;
+    --bs-btn-active-color: #23262F;
+    --bs-btn-active-bg: #E6E8EC;
+    --bs-btn-active-border-color: #E6E8EC;
+
+}
+
+select,
+.nice-select.open,
+.nice-select:focus {
+
+    border-radius: 50rem;
+    padding: 0 10px;
+    border: 2px solid #E6E8EC;
+    border-color: #E6E8EC;
+
+}
+
+.nice-select.open,
+.nice-select:focus {
+    border-color: #E6E8EC !important;
+}
+
+select .list {
+    margin-top: 20px !important;
+}
+
+/* FLIGHT SECTION ENDS*/
+
+/* REVIEW SECTION STARTS*/
+.review-section .section-heading {
+    margin-bottom: 130px;
+}
+
+.travel-tips:nth-child(2),
+.travel-tips:nth-child(3){
+    margin: 40px 0;
+}
+.travel-tips:nth-child(1) .rounded-pill{
+    padding: 2px 12px;
+    background: #8BC5E5;
+    
+}
+.travel-tips:nth-child(2) .rounded-pill{
+    padding: 2px 12px;
+    background: #92A5EF;
+}
+.travel-tips:nth-child(3) .rounded-pill{
+    padding: 2px 12px;
+    background: #58C27D;
+}
+.travel-tips h4{
+    margin-bottom: 16px;
+}
+/* .review-section .row > div:nth-child(2){
+    
+} */
+/* REVIEW SECTION ENDS*/
+
+/* SERVICE SECTION STARTS*/
+/* SERVICE SECTION ENDS*/
+
+/* SERVICE SECTION STARTS*/
+/* SERVICE SECTION ENDS*/
+
+/* .all-services .owl-nav,
+.all-testimonials .owl-nav {
+    position: absolute;
+    top: -70px;
+    right: 18px;
+}
+
+.all-services .owl-nav span,
+.all-testimonials .owl-nav span {
+    display: block;
+    justify-content: center;
+    background: #ffffffe1;
+    color: #646464;
+    padding: 2px 13px 5px 12px;
+    border-radius: 50%;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.all-services .owl-nav span:hover,
+.all-testimonials .owl-nav span:hover {
+    background: #37806B;
+    color: #FFF;
+}
+
+.all-services .owl-next,
+.all-testimonials .owl-next {
+    margin-left: 15px;
+
+} */
+
+
+
+/* SERVICE SECTION ENDS*/
+
+/* ABOUT SECTION ENDS*/
+
+
+
+/* Footer ENDS */
+
+
+.social-icons i {
+    font-size: 30px;
+    color: #d5d5d5;
+    transition: .3s;
+}
+
+.social-icons i:hover {
+    color: #37806B;
+}
