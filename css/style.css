@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    background: #FCFCFD;
+}
+
 /* COMMON STYLES STARTS*/
 h1,
 h2,
@@ -51,7 +55,20 @@ a {
     padding: 20px;
 }
 
+.travia-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FCFCFD;
+    background: #3B71FE;
+    border-radius: 90px;
+    padding: 16px 24px;
+}
 
+.travia-btn:hover {
+    color: #FCFCFD;
+    background: #1b5afa;
+}
 
 
 /* COMMON STYLES ENDS*/
@@ -243,67 +260,203 @@ select .list {
     margin-bottom: 130px;
 }
 
-.travel-tips:nth-child(2),
-.travel-tips:nth-child(3){
+.travel-tips:nth-child(2) {
     margin: 40px 0;
 }
-.travel-tips:nth-child(1) .rounded-pill{
+
+.travel-tips:nth-child(3) {
+    margin-bottom: 56px;
+}
+
+.travel-tips:nth-child(1) .rounded-pill {
     padding: 2px 12px;
     background: #8BC5E5;
-    
+
 }
-.travel-tips:nth-child(2) .rounded-pill{
+
+.travel-tips:nth-child(2) .rounded-pill {
     padding: 2px 12px;
     background: #92A5EF;
 }
-.travel-tips:nth-child(3) .rounded-pill{
+
+.travel-tips:nth-child(3) .rounded-pill {
     padding: 2px 12px;
     background: #58C27D;
 }
-.travel-tips h4{
+
+.travel-tips h4 {
     margin-bottom: 16px;
 }
-/* .review-section .row > div:nth-child(2){
-    
-} */
+
+.review-img-slider .review-img {
+    padding-right: 40px;
+}
+
+.rating-img {
+    width: 48px !important;
+    height: 48px;
+}
+
+.rating-star img {
+    width: 12px !important;
+    height: 12px;
+}
+
+.rating-star p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #23262F;
+
+
+}
+
+
+.rating-box {
+    z-index: 1;
+    background: linear-gradient(83.59deg, #FCFCFD 36.52%, rgba(252, 252, 253, 0.83) 98.8%);
+    box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 1);
+    backdrop-filter: blur(16px);
+    border-radius: 80px;
+    padding: 16px 32px 16px 16px;
+    gap: 16px;
+}
+
+.rating-box-1 {
+    top: 270px;
+    left: -40px;
+}
+
+.rating-box-2 {
+    top: 340px;
+    right: 0;
+}
+
+.rating-box-3 {
+    top: 500px;
+    left: -100px;
+}
+
+/* owl nav start */
+
+.review-img-slider .owl-nav {
+    position: absolute;
+    top: 25px;
+    right: 65px;
+}
+
+.review-img-slider .owl-nav button img {
+    border: 2px solid #00000000;
+    padding: 6px;
+    border-radius: 50rem;
+}
+
+.owl-nav button img:hover {
+    border: 2px solid #E6E8EC;
+}
+
+.owl-next {
+    margin-left: 8px;
+
+}
+
+/* owl nav end */
+
 /* REVIEW SECTION ENDS*/
 
-/* SERVICE SECTION STARTS*/
-/* SERVICE SECTION ENDS*/
+/* TRAVEL DESTINATION SECTION STARTS*/
+.travel-destination-section .section-heading {
+    margin-bottom: 80px;
+}
 
-/* SERVICE SECTION STARTS*/
-/* SERVICE SECTION ENDS*/
+.travel-destinations .travia-btn {
+    padding: 4px;
+}
 
-/* .all-services .owl-nav,
-.all-testimonials .owl-nav {
+.travel-destinations .card>p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px 12px 6px;
+    left: 16px;
+    top: 16px;
+    background: #23262F;
+    box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.1);
+    border-radius: 32px;
+    color: #FCFCFD;
+}
+
+.travel-destinations .card-img-top {
+    border-radius: 24px;
+}
+
+.travel-destinations .card-body {
+    padding-top: 20px !important;
+}
+
+.travel-destinations .card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.travel-destinations .card-text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+/* OWL NAV STARTS */
+.travel-destinations .owl-nav {
     position: absolute;
-    top: -70px;
-    right: 18px;
+    top: -210px;
+    right: 0;
 }
 
-.all-services .owl-nav span,
-.all-testimonials .owl-nav span {
-    display: block;
-    justify-content: center;
-    background: #ffffffe1;
-    color: #646464;
-    padding: 2px 13px 5px 12px;
-    border-radius: 50%;
-    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
-    transition: .3s;
+.travel-destinations .owl-nav button img {
+    border: 2px solid #00000000;
+    padding: 10px 8px;
+    border-radius: 50rem;
 }
 
-.all-services .owl-nav span:hover,
-.all-testimonials .owl-nav span:hover {
-    background: #37806B;
-    color: #FFF;
+/* OWL NAV  ENDS*/
+/* TRAVEL DESTINATION SECTION ENDS*/
+
+
+/* WORKS SECTION STARTS*/
+
+.work-section .section-heading {
+    margin-bottom: 60px;
 }
 
-.all-services .owl-next,
-.all-testimonials .owl-next {
-    margin-left: 15px;
+.work-section .col h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
 
-} */
+.work-section .col p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.work-section .row {
+    background-image: url(../images/dash-line.png);
+    background-repeat: no-repeat;
+    background-position: 220px 60px;
+}
+/* WORKS  SECTION ENDS*/
+
+/* SERVICE SECTION STARTS*/
+/* SERVICE SECTION ENDS*/
+
+/* DOWNLOAD SECTION STARTS*/
+.download-button .play-store{
+    margin-right: 40px ;
+}
+/* DOWNLOAD SECTION ENDS*/
+
+
 
 
 

@@ -32,7 +32,7 @@
         <nav class="navbar navbar-expand-lg fixed-top ">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/travia-logo.png" alt="">
+                    <img src="./images/travia-logo.png" alt="">
                 </a>
                 <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -42,7 +42,7 @@
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/decbase-logo.png" alt="">
+                            <img src="./images/decbase-logo.png" alt="">
                         </a>
                         <button type="button" class="btn-close  shadow-none" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
@@ -54,7 +54,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    <span> <img src="images/icons/globe.svg" alt="">
+                                    <span> <img src="./images/icons/globe.svg" alt="">
                                     </span>
                                     Language
                                 </a>
@@ -65,12 +65,12 @@
 
                         </ul>
                         <div class="d-flex align-items-center">
-                            <button class="btn notification-btn position-relative"> <img src="images/icons/bell.svg"
+                            <button class="btn notification-btn position-relative"> <img src="./images/icons/bell.svg"
                                     alt="">
                                 <span class="d-block rounded-circle position-absolute top-0 end-0"></span></button>
                         </div>
                         <button class="btn p-0 user-btn ms-3"> <img class="rounded-circle bg-info-subtle "
-                                src="images/user-avater.png" alt="">
+                                src="./images/user-avater.png" alt="">
                         </button>
 
 
@@ -85,14 +85,16 @@
 
     <!-- HERO SECTION STARTS -->
     <section class="hero-section container position-relative rounded-5">
-        <!-- <img src="images/hero-bg.png" alt=""> -->
+
         <div class="hero-text position-absolute ">
             <h1>
                 Air, sleep, <br>
                 dream
             </h1>
-            <p class="mb-3">Find and book a great experience.</p>
-            <button class="btn btn-primary rounded-5">Start your search</button>
+            <p class="mb-5">Find and book a great experience.</p>
+            <div>
+                <a class="travia-btn" href="#">Start your search</a>
+            </div>
 
         </div>
 
@@ -135,7 +137,7 @@
                                 <div class="row row-cols-2">
                                     <div class="col d-flex p-20px">
                                         <div class="flight-icon me-3">
-                                            <img src="images/icons/flight-icon-1.svg" alt="">
+                                            <img src="./images/icons/flight-icon-1.svg" alt="">
                                         </div>
                                         <div class="flight-details">
                                             <h3 class="lh-1">Flying from</h3>
@@ -144,7 +146,7 @@
                                     </div>
                                     <div class="col d-flex p-20px">
                                         <div class="flight-icon me-3">
-                                            <img src="images/icons/flight-icon-2.svg" alt="">
+                                            <img src="./images/icons/flight-icon-2.svg" alt="">
                                         </div>
                                         <div class="flight-details">
                                             <h3 class="lh-1">Flying to</h3>
@@ -157,7 +159,7 @@
                                 <div class="row">
                                     <div class="col-5 d-flex p-20px">
                                         <div class="flight-icon me-3">
-                                            <img src="images/icons/flight-icon-3.svg" alt="">
+                                            <img src="./images/icons/flight-icon-3.svg" alt="">
                                         </div>
                                         <div class="flight-details">
                                             <h3 class="lh-1">Departure</h3>
@@ -166,14 +168,14 @@
                                     </div>
                                     <div class="col-7 d-flex p-20px">
                                         <div class="flight-icon me-3">
-                                            <img src="images/icons/flight-icon-3.svg" alt="">
+                                            <img src="./images/icons/flight-icon-3.svg" alt="">
                                         </div>
                                         <div class="flight-details">
                                             <h3 class="lh-1">Return</h3>
                                             <p>Add a return date</p>
                                         </div>
                                         <div class="flight-search-button bg-primary rounded-circle p-20px ms-2">
-                                            <img src="images/icons/search-icon.svg" alt="">
+                                            <img src="./images/icons/search-icon.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +215,7 @@
             <h2>Travel to make memories all around the world</h2>
             <p>Find trips that fit a flexible lifestyle</p>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-between">
             <div class="col-md-4">
                 <div class="travel-tips">
                     <p class="d-inline-block text-white rounded-pill mb-3 ">01</p>
@@ -231,34 +233,185 @@
                     <h4>See what’s really included</h4>
                     <p>Stacks is a production-ready library of stackable content blocks built in React Native</p>
                 </div>
-                <button class="btn btn-primary rounded-5">Start your search</button>
+                <a class="travia-btn" href="#">Start your search</a>
+
             </div>
-            <div class="col-md-8 ">
-                <div class="review-img-slider ">
-                   
-                    <div>
-                         <img class="d-flex ms-auto rounded-5 me-5" src="/images/aeroplane.png" alt="">
+            <div class="col-md-5 position-relative">
+                <div class="review-img-slider owl-carousel">
+
+                    <div class="review-img">
+                        <img class="d-flex ms-auto rounded-5" src="./images/aeroplane.png" alt="">
                     </div>
-                   
-                    
+
+                    <div class="review-img">
+                        <img class="d-flex ms-auto rounded-5" src="./images/aeroplane.png" alt="">
+                    </div>
+
+
+
+                    <!-- RATING BOX START -->
+
                 </div>
-               
+                <div class="rating-box rating-box-1 d-flex position-absolute">
+                    <img class="rounded-circle rating-img bg-primary-subtle" src="./images/user-avater.png" alt="">
+                    <div class="rating-text">
+                        <h6>Antone Heller</h6>
+                        <div class="rating-star d-flex align-items-center">
+                            <img class=" me-1" src="./images/star.png" alt="">
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-box rating-box-2 d-flex position-absolute">
+                    <img class="rounded-circle rating-img bg-primary-subtle" src="./images/user-avater.png" alt="">
+                    <div class="rating-text">
+                        <h6>Antone Heller</h6>
+                        <div class="rating-star d-flex align-items-center">
+                            <img class=" me-1" src="./images/star.png" alt="">
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-box rating-box-3 d-flex position-absolute">
+                    <img class="rounded-circle rating-img bg-primary-subtle" src="./images/user-avater.png" alt="">
+                    <div class="rating-text">
+                        <h6>Antone Heller</h6>
+                        <div class="rating-star d-flex align-items-center">
+                            <img class=" me-1" src="./images/star.png" alt="">
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RATING BOX END -->
+
             </div>
         </div>
     </section>
-    
+
     <!-- REVIEW SECTION ENDS -->
 
-    <!-- SUCCESS SECTION STARTS -->
+    <!-- TRAVEL DESTINATION SECTION STARTS -->
+    <section class="travel-destination-section container px-5 py-100">
+        <div class="section-heading">
+            <h2>Destinations you can travel</h2>
+            <p>Popular destinations open to most visitors <br> from several Countries</p>
+        </div>
+        <div class="travel-destinations owl-carousel  position-relative">
 
-    <!-- SUCCESS SECTION ENDS -->
-    <!-- Set up your HTML -->
+            <!-- DESTINATION 1 -->
+            <div class="card bg-transparent border-0 position-relative">
+                <img src="./images/travel-destinations/singapore.png" class="card-img-top" alt="...">
+                <p class="position-absolute">From Turkey</p>
+                <div class="card-body bg-transparent d-flex justify-content-between p-0">
+                    <div>
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="card-text">COVID-19 test required <br>
+                            Vaccinated travelers can visit</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESTINATION 2 -->
+            <div class="card bg-transparent border-0 position-relative">
+                <img src="./images/travel-destinations/dubai.png" class="card-img-top" alt="...">
+                <p class="position-absolute">From Turkey</p>
+                <div class="card-body bg-transparent d-flex justify-content-between p-0">
+                    <div>
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="card-text">COVID-19 test required <br>
+                            Vaccinated travelers can visit</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESTINATION 3 -->
+            <div class="card bg-transparent border-0 position-relative">
+                <img src="./images/travel-destinations/new-york.png" class="card-img-top" alt="...">
+                <p class="position-absolute">From Turkey</p>
+                <div class="card-body bg-transparent d-flex justify-content-between p-0">
+                    <div>
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="card-text">COVID-19 test required <br>
+                            Vaccinated travelers can visit</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESTINATION 4 -->
+            <div class="card bg-transparent border-0 position-relative">
+                <img src="./images/travel-destinations/tokyo.png" class="card-img-top" alt="...">
+                <p class="position-absolute">From Turkey</p>
+                <div class="card-body bg-transparent d-flex justify-content-between p-0">
+                    <div>
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="card-text">COVID-19 test required <br>
+                            Vaccinated travelers can visit</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESTINATION 5(1) -->
+            <div class="card bg-transparent border-0 position-relative">
+                <img src="./images/travel-destinations/singapore.png" class="card-img-top" alt="...">
+                <p class="position-absolute">From Turkey</p>
+                <div class="card-body bg-transparent d-flex justify-content-between p-0">
+                    <div>
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="card-text">COVID-19 test required <br>
+                            Vaccinated travelers can visit</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- TRAVEL DESTINATION SECTION ENDS -->
 
 
-    <!-- TESTIMONIALS SECTION STARTS -->
 
+    <!-- WORKS SECTION STARTS -->
+    <section class="work-section container px-5 pt-0 py-100">
+        <div class="section-heading text-center mx-auto">
+            <h2>How it works</h2>
+            <p>Keep calm & travel on</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col text-center">
+                <img src="./images/book.png" alt="">
+                <h4>Book & relax</h4>
+                <p>We realize ideas from simple to <br> complex, everything becomes easy <br> to use.</p>
+            </div>
+            <div class="col text-center">
+                <img src="./images/check.png" alt="">
+                <h4>Smart checklist</h4>
+                <p>We realize ideas from simple to <br> complex, everything becomes easy <br> to use.</p>
+            </div>
+            <div class="col text-center">
+                <img src="./images/save.png" alt="">
+                <h4>Save more</h4>
+                <p>We realize ideas from simple to <br> complex, everything becomes easy <br> to use.</p>
+            </div>
 
-    <!-- TESTIMONIALS SECTION ENDS -->
+        </div>
+    </section>
+
+    <!-- WORKS SECTION ENDS -->
 
 
     <!-- BLOG SECTION STARTS -->
@@ -266,9 +419,28 @@
     <!-- BLOG SECTION ENDS -->
 
 
-    <!-- ABOUT SECTION STARTS -->
+    <!-- DOWNLOAD SECTION STARTS -->
+    <section class="download-section container px-5 pt-0 py-100">
+        <div class="row ">
+            <div class="col-md-5 my-auto">
+                <h6>Download & Subscribe our newsletter</h6>
+                <h1>Download Travia App <br>
+                    Book Anything <br> without a hassle!</h1>
+                <p>Book flights, hotels, trains & rental cars anywhere in the world in just seconds.</p>
+                <div class="download-button">
 
-    <!-- ABOUT SECTION ENDS -->
+                    <a href="#"><img src="./images/play-store.png" class="play-store" alt=""></a>
+
+                    <a href="#"><img src="./images/app-store.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-7 text-end">
+                <img src="./images/download-img.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOAD SECTION ENDS -->
 
 
     <!-- ABOUT SECTION STARTS -->
@@ -293,21 +465,21 @@
 
 
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"> </script>
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
-    <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"> </script>
 
     <!-- Owl Carousel JS -->
     <script src="vendor/owl/owl.carousel.min.js"></script>
 
     <!-- JQUERY NICE SELECT JS -->
     <script src="vendor/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
-    <script src="vendor/jquery-nice-select-1.1.0/js/jquery.js"></script>
+
 
     <!-- Main JS -->
     <script src="js/main.js"></script>

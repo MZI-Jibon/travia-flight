@@ -32,15 +32,36 @@ $(document).ready(function () {
     //JQUERY NICE SELECT JS
     $('select').niceSelect();
 
-    // CAROUSEL JS
+    // REVIEW CAROUSEL JS
     $('.review-img-slider').owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
+        navText: ["<img src='../images/icons/arrow-left.svg'>","<img src='../images/icons/arrow-right.svg'>"],
         responsiveClass: true,
         responsive: {
             0: {
+                items: 1,
+            }
+        }
+    })
+
+    // REVIEW CAROUSEL JS
+    $('.travel-destinations').owlCarousel({
+        loop: true,
+        margin: 32,
+        nav: true,
+        navText: ["<img src='../images/icons/arrow-left-gray.svg'>","<img src='../images/icons/arrow-right-gray.svg'>"],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
                 items: 2,
+            },
+            991: {
+                items: 4,
             }
         }
     })
