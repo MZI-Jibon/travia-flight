@@ -126,7 +126,7 @@ nav .notification-btn span {
 }
 
 .hero-section {
-    background: linear-gradient(92.61deg, rgba(236, 248, 252, 0.84) 13.1%, rgba(236, 248, 252, 0) 96.07%), url("/images/hero-bg.png");
+    background: linear-gradient(92.61deg, rgba(236, 248, 252, 0.84) 13.1%, rgba(236, 248, 252, 0) 96.07%), url("../images/hero-bg.png");
     background-size: cover;
     height: 720px;
     background-repeat: no-repeat;
