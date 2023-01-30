@@ -37,7 +37,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         nav: true,
-        navText: ["<img src='../images/icons/arrow-left.svg'>","<img src='../images/icons/arrow-right.svg'>"],
+        navText: ["<img src='./images/icons/arrow-left.svg'>","<img src='./images/icons/arrow-right.svg'>"],
         responsiveClass: true,
         responsive: {
             0: {
@@ -51,7 +51,7 @@ $(document).ready(function () {
         loop: true,
         margin: 32,
         nav: true,
-        navText: ["<img src='../images/icons/arrow-left-gray.svg'>","<img src='../images/icons/arrow-right-gray.svg'>"],
+        navText: ["<img src='./images/icons/arrow-left-gray.svg'>","<img src='./images/icons/arrow-right-gray.svg'>"],
         responsiveClass: true,
         responsive: {
             0: {
