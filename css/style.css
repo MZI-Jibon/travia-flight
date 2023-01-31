@@ -461,8 +461,100 @@ select .list {
 
 /* WORKS  SECTION ENDS*/
 
-/* SERVICE SECTION STARTS*/
-/* SERVICE SECTION ENDS*/
+/* PRODUCT SECTION STARTS*/
+.product-section .container {
+    background: #F4F5F6;
+    border-radius: 24px;
+    padding: 80px;
+
+}
+
+.product-section .section-heading {
+    margin-bottom: 65px;
+}
+
+.product-tab>.row {
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 32px;
+}
+
+.product-section .card {
+    border-radius: 16px;
+}
+
+.product-section .card-img-top {
+    border-radius: 16px 16px 0 0;
+}
+
+.product-body {
+    padding: 20px;
+}
+
+.product-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product-text {
+    font-size: 12px;
+    line-height: 20px;
+    color: #353945;
+}
+
+.price-box {
+    padding: 8px;
+    border: 2px solid #58C27D;
+    border-radius: 4px;
+    width: fit-content;
+
+}
+
+.price-box p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: #B1B5C4;
+    width: fit-content;
+}
+
+.price-box p:nth-child(2) {
+    color: #58C27D;
+    /* margin: 6px 0 0 0; */
+}
+
+.product-body .hr {
+    background-color: #E6E8EC;
+    height: 1px;
+    margin: 16px 0;
+}
+
+.product-rating .date {
+    font-size: 12px;
+    line-height: 20px;
+    color: #777E91;
+}
+
+.rating p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #23262F;
+}
+
+.product-tab .btn {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #23262F;
+    border: 2px solid #E6E8EC;
+    border-radius: 50rem;
+    margin-top: 80px;
+}
+
+/* PRODUCT SECTION ENDS*/
 
 /* DOWNLOAD SECTION STARTS*/
 .download-section h6 {
@@ -528,9 +620,10 @@ input::placeholder {
 
 
 /* Footer STARTS */
-footer{
+footer {
     padding-top: 80px;
 }
+
 .footer-top h6 {
     font-family: 'Poppins';
     font-weight: 700;
