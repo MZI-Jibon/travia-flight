@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: 'DM Sans', sans-serif;
     background: #FCFCFD;
 }
 
@@ -12,11 +13,14 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
+
     color: #23262F;
 }
 
 p {
+    font-family: 'Poppins', sans-serif;
     color: #777E91;
     font-size: 16px;
     line-height: 24px;
@@ -43,7 +47,15 @@ ul {
 
 a {
     text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777E91;
+    width: fit-content;
+}
 
+a:hover {
+    color: #58C27D;
 }
 
 .py-100 {
@@ -440,41 +452,104 @@ select .list {
     font-size: 14px;
     line-height: 24px;
 }
+
 .work-section .row {
     background-image: url(../images/dash-line.png);
     background-repeat: no-repeat;
     background-position: 220px 60px;
 }
+
 /* WORKS  SECTION ENDS*/
 
 /* SERVICE SECTION STARTS*/
 /* SERVICE SECTION ENDS*/
 
 /* DOWNLOAD SECTION STARTS*/
-.download-button .play-store{
-    margin-right: 40px ;
+.download-section h6 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 16px;
+    color: #777E91;
+
 }
+
+.download-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+}
+
+.download-section p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+
+}
+
+.download-button .play-store {
+    margin-right: 40px;
+}
+
+form>div {
+    border: 2px solid #E6E8EC;
+    border-radius: 90px;
+}
+
+.download-section form>div {
+    margin-top: 40px;
+}
+
+input::placeholder {
+    color: #777E91 !important;
+}
+
+.email-btn {
+    background: #1b5afa;
+    padding: 4px 5px;
+    margin: 6px;
+    border-radius: 50px;
+}
+
+.download-section form input {
+    padding: 0 60px 0 16px;
+}
+
 /* DOWNLOAD SECTION ENDS*/
 
 
 
 
 
-/* SERVICE SECTION ENDS*/
-
-/* ABOUT SECTION ENDS*/
 
 
+
+/* Footer STARTS */
+footer{
+    padding-top: 80px;
+}
+.footer-top h6 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: #23262F;
+    margin-bottom: 16px;
+}
+
+.footer-top .col.d-flex {
+    gap: 32px;
+}
+
+.footer-bottom p {
+    font-family: 'Poppins';
+    font-size: 12px;
+    line-height: 20px;
+    color: #23262F;
+
+}
 
 /* Footer ENDS */
-
-
-.social-icons i {
-    font-size: 30px;
-    color: #d5d5d5;
-    transition: .3s;
-}
-
-.social-icons i:hover {
-    color: #37806B;
-}
