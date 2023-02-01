@@ -181,9 +181,81 @@ nav .notification-btn span {
     backdrop-filter: blur(16px);
 }
 
+/* ////////// */
+.flight-section .nav-link {
+    border: none;
+    margin-right: 48px;
+}
+
+.flight-section .nav-link {
+    font-size: 14px;
+    line-height: 16px;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 30px !important;
+
+}
+
+.flight-section .nav-link:hover,
+.flight-section .nav-link.active,
+.flight-section .nav-link:focus {
+    background: transparent;
+    color: #23262F !important;
+    border-bottom: 2px solid #23262F;
+}
+
+.flight-section .nav-tabs {
+    border-bottom: 1px solid #E6E8EC;
+}
+
+.flight-section .tab-pane {
+    padding-top: 30px;
+}
+
+.flight-section .option-buttons {
+    margin-bottom: 16px;
+}
+
+.flight-section .option-buttons .btn {
+    /* background: transparent; */
+}
+
+/* ////////// */
 /* Tabs */
 
 
+
+.tab-pane .btn {
+
+    border: 2px solid #E6E8EC;
+    border-radius: 50rem;
+
+    --bs-btn-color: #23262F;
+    --bs-btn-border-color: #E6E8EC;
+    --bs-btn-hover-color: #23262F;
+    --bs-btn-hover-bg: #E6E8EC;
+    --bs-btn-active-color: #23262F;
+    --bs-btn-active-bg: #E6E8EC;
+    --bs-btn-active-border-color: #E6E8EC;
+}
+
+.tab-pane .btn:hover {
+    background: #E6E8EC;
+}
+
+
+/* .btn-outline-primary {
+     --bs-btn-color: #23262F;
+    --bs-btn-border-color: #E6E8EC;
+    --bs-btn-hover-color: #23262F;
+    --bs-btn-hover-bg: #E6E8EC;
+    --bs-btn-active-color: #23262F;
+    --bs-btn-active-bg: #E6E8EC;
+    --bs-btn-active-border-color: #E6E8EC; 
+
+} */
+
+/* 
 ul#tabs-nav {
     list-style: none;
     margin: 0;
@@ -220,31 +292,7 @@ ul#tabs-nav li.active a {
     margin-top: -1px;
     padding-top: 30px;
 }
-
-
-
-.tab-content .btn {
-    background: #fff;
-    border: 2px solid #E6E8EC;
-    border-radius: 50rem;
-}
-
-.tab-content .btn:hover {
-    background: #E6E8EC;
-}
-
-
-.btn-outline-primary {
-    --bs-btn-color: #23262F;
-    --bs-btn-border-color: #E6E8EC;
-    --bs-btn-hover-color: #23262F;
-    --bs-btn-hover-bg: #E6E8EC;
-    --bs-btn-active-color: #23262F;
-    --bs-btn-active-bg: #E6E8EC;
-    --bs-btn-active-border-color: #E6E8EC;
-
-}
-
+ */
 select,
 .nice-select.open,
 .nice-select:focus {
@@ -579,7 +627,6 @@ select .list {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 40px;
-
 }
 
 .download-button .play-store {

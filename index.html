@@ -46,7 +46,7 @@
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <a class="navbar-brand" href="index.html">
-                            <img src="./images/decbase-logo.png" alt="">
+                            <img src="./images/travia-logo.png" alt="">
                         </a>
                         <button type="button" class="btn-close  shadow-none" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
@@ -111,34 +111,46 @@
         <div class="flight-booking rounded-5">
 
             <div class="tabs">
-                <ul id="tabs-nav">
-                    <li><a href="#tab1">Flights</a></li>
-                    <li><a href="#tab2">Stays</a></li>
-                    <li><a href="#tab3">Holidays</a></li>
-                </ul> <!-- END tabs-nav -->
-                <div id="tabs-content">
 
-                    <div id="tab1" class="tab-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="flight-tab" data-bs-toggle="tab"
+                            data-bs-target="#flight-tab-pane" type="button" role="tab" aria-controls="flight-tab-pane"
+                            aria-selected="true">Flights</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="stays-tab" data-bs-toggle="tab" data-bs-target="#stays-tab-pane"
+                            type="button" role="tab" aria-controls="stays-tab-pane" aria-selected="false">Stays</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="holidays-tab" data-bs-toggle="tab"
+                            data-bs-target="#holidays-tab-pane" type="button" role="tab" aria-controls="holidays-tab"
+                            aria-selected="false">Holidays</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="flight-tab-pane" role="tabpanel"
+                        aria-labelledby="flight-tab" tabindex="0">
                         <div class="option-buttons d-flex gap-2">
 
                             <input type="checkbox" class="btn-check" id="round-trip-btn" autocomplete="off">
-                            <label class="btn  btn-outline-primary rounded-pill"
-                                for="round-trip-btn">Round-trip</label><br>
+                            <label class="btn rounded-pill" for="round-trip-btn">Round-trip</label><br>
 
                             <input type="checkbox" class="btn-check" id="one-way-btn" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="one-way-btn">One-way</label><br>
+                            <label class="btn " for="one-way-btn">One-way</label><br>
 
 
-                            <select>
+                            <select class="btn">
                                 <option data-display="Select">1 adult</option>
                                 <option value="1">Some option</option>
                                 <option value="2">Another option</option>
                             </select>
 
                         </div>
-                        <div class="row row-cols-2 mt-3">
-                            <div class="col">
-                                <div class="row row-cols-2">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col-12 col-lg-6">
+                                <div class="row row-cols-1 row-cols-sm-2">
                                     <div class="col d-flex p-20px">
                                         <div class="flight-icon me-3">
                                             <img src="./images/icons/flight-icon-1.svg" alt="">
@@ -160,8 +172,8 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="row">
-                                    <div class="col-5 d-flex p-20px">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col col-lg-5 d-flex p-20px">
                                         <div class="flight-icon me-3">
                                             <img src="./images/icons/flight-icon-3.svg" alt="">
                                         </div>
@@ -170,7 +182,7 @@
                                             <p>Departure</p>
                                         </div>
                                     </div>
-                                    <div class="col-7 d-flex p-20px">
+                                    <div class="col col-lg-7 d-flex p-20px">
                                         <div class="flight-icon me-3">
                                             <img src="./images/icons/flight-icon-3.svg" alt="">
                                         </div>
@@ -186,31 +198,25 @@
                             </div>
 
                         </div>
+
                     </div>
-                    <div id="tab2" class="tab-content">
-                        <h2>Dante Hicks</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, molestias ratione? Corrupti
-                            voluptate consequatur iure enim libero quis ipsum quam vel unde dignissimos reprehenderit
-                            cum natus consequuntur nostrum perferendis cupiditate modi a excepturi, molestias dicta,
-                            dolor magni fugiat nemo fuga. Deleniti, id velit quas aut sit magnam dolor distinctio
-                            mollitia?</p>
+                    <div class="tab-pane fade" id="stays-tab-pane" role="tabpanel" aria-labelledby="stays-tab"
+                        tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut quos dignissimos nobis?
                     </div>
-                    <div id="tab3" class="tab-content">
-                        <h2>Randall Gravesz </h2>
-                        <p>Cupiditate aspernatur consequuntur nobis possimus voluptatibus quis itaque? Eius maiores
-                            dicta mollitia vitae natus quas odit sapiente! Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Dolore obcaecati neque sapiente necessitatibus inventore dolores quasi,
-                            totam porro sed dolorem? Quo adipisci rem, accusamus facilis commodi hic tenetur quam dicta
-                            libero. </p>
+                    <div class="tab-pane fade" id="holidays-tab-pane" role="tabpanel" aria-labelledby="holidays-tab"
+                        tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut quos dignissimos nobis?
                     </div>
 
-                </div> <!-- END tabs-content -->
+                </div>
             </div> <!-- END tabs -->
         </div>
 
     </section>
 
     <!-- FLIGHT SECTION ENDS -->
+
 
 
     <!-- REVIEW SECTION STARTS -->
@@ -244,11 +250,11 @@
                 <div class="review-img-slider owl-carousel">
 
                     <div class="review-img">
-                        <img class="d-flex ms-auto rounded-5" src="./images/aeroplane.png" alt="">
+                        <img class="img-fluid d-flex ms-auto rounded-5" src="./images/aeroplane.png" alt="">
                     </div>
 
                     <div class="review-img">
-                        <img class="d-flex ms-auto rounded-5" src="./images/aeroplane.png" alt="">
+                        <img class="img-fluid d-flex ms-auto rounded-5" src="./images/aeroplane.png" alt="">
                     </div>
 
 
@@ -314,7 +320,15 @@
                             Vaccinated travelers can visit</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                        <a href="#" class="travia-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                    fill="#FCFCFD" />
+                            </svg>
+
+                        </a>
                     </div>
                 </div>
             </div>
@@ -330,7 +344,13 @@
                             Vaccinated travelers can visit</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                        <a href="#" class="travia-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                    fill="#FCFCFD" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -346,7 +366,13 @@
                             Vaccinated travelers can visit</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                        <a href="#" class="travia-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                    fill="#FCFCFD" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -362,7 +388,13 @@
                             Vaccinated travelers can visit</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                        <a href="#" class="travia-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                    fill="#FCFCFD" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -378,7 +410,13 @@
                             Vaccinated travelers can visit</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <a href="#" class="travia-btn"><img src="./images/icons/arrow-right.svg" alt=""></a>
+                        <a href="#" class="travia-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                    fill="#FCFCFD" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -397,17 +435,17 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3">
             <div class="col text-center">
-                <img src="./images/book.png" alt="">
+                <img class="img-fluid" src="./images/book.png" alt="">
                 <h4>Book & relax</h4>
                 <p>We realize ideas from simple to <br> complex, everything becomes easy <br> to use.</p>
             </div>
             <div class="col text-center">
-                <img src="./images/check.png" alt="">
+                <img class="img-fluid" src="./images/check.png" alt="">
                 <h4>Smart checklist</h4>
                 <p>We realize ideas from simple to <br> complex, everything becomes easy <br> to use.</p>
             </div>
             <div class="col text-center">
-                <img src="./images/save.png" alt="">
+                <img class="img-fluid" src="./images/save.png" alt="">
                 <h4>Save more</h4>
                 <p>We realize ideas from simple to <br> complex, everything becomes easy <br> to use.</p>
             </div>
@@ -426,8 +464,8 @@
                 <p>Let’s go on an adventure</p>
             </div>
             <div class="product-tab">
-                <div class="row row-cols-1 row-cols-md-4">
-                   
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+
                     <!-- PRODUCT 1 -->
                     <div class="col">
                         <div class="card border-0">
@@ -448,7 +486,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -463,7 +501,7 @@
 
                         </div>
                     </div>
-                   
+
                     <!-- PRODUCT 2 -->
                     <div class="col">
                         <div class="card border-0">
@@ -484,7 +522,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -499,12 +537,11 @@
 
                         </div>
                     </div>
-                   
+
                     <!-- PRODUCT 3 -->
                     <div class="col">
                         <div class="card border-0">
-                            <img src="./images/Product card/landscape 08.png"
-                                class="card-img-top" alt="...">
+                            <img src="./images/Product card/landscape 08.png" class="card-img-top" alt="...">
                             <div class="product-body ">
                                 <div class="row">
                                     <div class="product-details col-8 pe-0">
@@ -520,7 +557,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -535,12 +572,12 @@
 
                         </div>
                     </div>
-                   
+
                     <!-- PRODUCT 4 -->
                     <div class="col">
                         <div class="card border-0">
-                            <img src="./images/Product card/pexels-jeffrey-czum-3330118 (1) 1.png"
-                                class="card-img-top" alt="...">
+                            <img src="./images/Product card/pexels-jeffrey-czum-3330118 (1) 1.png" class="card-img-top"
+                                alt="...">
                             <div class="product-body ">
                                 <div class="row">
                                     <div class="product-details col-8 pe-0">
@@ -556,7 +593,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -571,12 +608,12 @@
 
                         </div>
                     </div>
-                   
+
                     <!-- PRODUCT 5 -->
                     <div class="col">
                         <div class="card border-0">
-                            <img src="./images/Product card/pexels-jess-vide-4321802 1.png"
-                                class="card-img-top" alt="...">
+                            <img src="./images/Product card/pexels-jess-vide-4321802 1.png" class="card-img-top"
+                                alt="...">
                             <div class="product-body ">
                                 <div class="row">
                                     <div class="product-details col-8 pe-0">
@@ -592,7 +629,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -607,12 +644,12 @@
 
                         </div>
                     </div>
-                   
+
                     <!-- PRODUCT 6 -->
                     <div class="col">
                         <div class="card border-0">
-                            <img src="./images/Product card/pexels-marko-klaric-6163875 1.png"
-                                class="card-img-top" alt="...">
+                            <img src="./images/Product card/pexels-marko-klaric-6163875 1.png" class="card-img-top"
+                                alt="...">
                             <div class="product-body ">
                                 <div class="row">
                                     <div class="product-details col-8 pe-0">
@@ -628,7 +665,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -643,12 +680,12 @@
 
                         </div>
                     </div>
-                   
+
                     <!-- PRODUCT 7 -->
                     <div class="col">
                         <div class="card border-0">
-                            <img src="./images/Product card/pexels-quang-nguyen-vinh-3355732 1.png"
-                                class="card-img-top" alt="...">
+                            <img src="./images/Product card/pexels-quang-nguyen-vinh-3355732 1.png" class="card-img-top"
+                                alt="...">
                             <div class="product-body ">
                                 <div class="row">
                                     <div class="product-details col-8 pe-0">
@@ -664,7 +701,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -679,7 +716,7 @@
 
                         </div>
                     </div>
-                   
+
                     <!-- PRODUCT 8 -->
                     <div class="col">
                         <div class="card border-0">
@@ -700,7 +737,7 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="hr"></div>
+                                <div class="hr"></div>
                                 <div class="product-rating d-flex justify-content-between">
                                     <p class="date">
                                         Tue, Jul 20 - Fri, Jul 23
@@ -737,11 +774,11 @@
                 <h1>Download Travia App <br>
                     Book Anything <br> without a hassle!</h1>
                 <p>Book flights, hotels, trains & rental cars anywhere in the world in just seconds.</p>
-                <div class="download-button">
+                <div class="download-button d-flex">
 
-                    <a href="#"><img src="./images/play-store.png" class="play-store" alt=""></a>
+                    <a href="#" class="play-store"><img class="img-fluid " src="./images/play-store.png" alt=""></a>
 
-                    <a href="#"><img src="./images/app-store.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="./images/app-store.png" alt=""></a>
                 </div>
 
                 <!--EMAIL AREA  STARTS -->
@@ -754,7 +791,13 @@
 
 
                             <a href="#" class=" email-btn">
-                                <img class="" src="./images/icons/arrow-right.svg" alt="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                        fill="#FCFCFD" />
+                                </svg>
+
                             </a>
 
                         </div>
@@ -764,7 +807,7 @@
 
             </div>
             <div class="col-md-7 text-end">
-                <img src="./images/download-img.png" alt="">
+                <img class="img-fluid" src="./images/download-img.png" alt="">
             </div>
         </div>
     </section>
@@ -793,7 +836,7 @@
                     <a href="#">Jobs</a>
                     <a href="#">Download</a>
                 </div>
-                <div class="col-3 d-flex justify-content-end">
+                <div class="col-3 d-flex justify-content-lg-end">
 
                     <!--EMAIL AREA  STARTS -->
                     <form action="" class="mb-0 ">
@@ -807,7 +850,13 @@
 
 
                                 <a href="#" class=" email-btn">
-                                    <img class="" src="./images/icons/arrow-right.svg" alt="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                            fill="#FCFCFD" />
+                                    </svg>
+
                                 </a>
 
                             </div>

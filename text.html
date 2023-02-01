@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trav-Test</title>
+
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- JQUERY NICE SELECT JS -->
+    <link rel="stylesheet" href="vendor/jquery-nice-select-1.1.0/css/nice-select.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="vendor/owl/assets/owl.carousel.min.css">
+
+    <!-- Maii CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- HEADER STARTS -->
+   
+    <!-- HEADER ENDS -->
+
+    <!-- MAIN PARTS STARTS -->
+
+    <!-- HERO SECTION STARTS -->
+    <section class="hero-section container position-relative rounded-5">
+
+        <div class="hero-text position-absolute ">
+            <h1>
+                Air, sleep, <br>
+                dream
+            </h1>
+            <p class="mb-5">Find and book a great experience.</p>
+            <div>
+                <a class="travia-btn" href="#">Start your search</a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- HERO SECTION ENDS -->
+
+    <!-- FLIGHT SECTION STARTS -->
+    <section class="flight-section container px-5  position-relative">
+
+        <div class="flight-booking rounded-5">
+
+            <div class="tabs">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="flight-tab" data-bs-toggle="tab"
+                            data-bs-target="#flight-tab-pane" type="button" role="tab" aria-controls="flight-tab-pane"
+                            aria-selected="true">Flights</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="stays-tab" data-bs-toggle="tab" data-bs-target="#stays-tab-pane"
+                            type="button" role="tab" aria-controls="stays-tab-pane" aria-selected="false">Stays</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="holidays-tab" data-bs-toggle="tab" data-bs-target="#holidays-tab-pane"
+                            type="button" role="tab" aria-controls="holidays-tab"
+                            aria-selected="false">Holidays</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="flight-tab-pane" role="tabpanel"
+                        aria-labelledby="flight-tab" tabindex="0">
+                        <div class="option-buttons d-flex gap-2">
+
+                            <input type="checkbox" class="btn-check" id="round-trip-btn" autocomplete="off">
+                            <label class="btn  btn-outline-primary rounded-pill"
+                                for="round-trip-btn">Round-trip</label><br>
+
+                            <input type="checkbox" class="btn-check" id="one-way-btn" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="one-way-btn">One-way</label><br>
+
+
+                            <select>
+                                <option data-display="Select">1 adult</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Another option</option>
+                            </select>
+
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col-12 col-lg-6">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-1.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Flying from</h3>
+                                            <p>Leaving from</p>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-2.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Flying to</h3>
+                                            <p>Going to </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col col-lg-5 d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-3.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Departure</h3>
+                                            <p>Departure</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-7 d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-3.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Return</h3>
+                                            <p>Add a return date</p>
+                                        </div>
+                                        <div class="flight-search-button bg-primary rounded-circle p-20px ms-2">
+                                            <img src="./images/icons/search-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="stays-tab-pane" role="tabpanel" aria-labelledby="stays-tab"
+                        tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut quos dignissimos nobis?
+                    </div>
+                    <div class="tab-pane fade" id="holidays-tab-pane" role="tabpanel" aria-labelledby="holidays-tab"
+                        tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut quos dignissimos nobis?
+                    </div>
+
+                </div>
+            </div> <!-- END tabs -->
+        </div>
+
+    </section>
+
+    <!-- FLIGHT SECTION ENDS -->
+
+
+
+   
+    <section class="flight-section container px-5  position-relative">
+
+        <div class="flight-booki rounded-5">
+
+            <div class="tabs">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="flight-tab" data-bs-toggle="tab"
+                            data-bs-target="#flight-tab-pane" type="button" role="tab" aria-controls="flight-tab-pane"
+                            aria-selected="true">Flights</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="stays-tab" data-bs-toggle="tab" data-bs-target="#stays-tab-pane"
+                            type="button" role="tab" aria-controls="stays-tab-pane" aria-selected="false">Stays</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="holidays-tab" data-bs-toggle="tab" data-bs-target="#holidays-tab-pane"
+                            type="button" role="tab" aria-controls="holidays-tab"
+                            aria-selected="false">Holidays</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="flight-tab-pane" role="tabpanel"
+                        aria-labelledby="flight-tab" tabindex="0">
+                        
+                        <div class="row row-cols-2 mt-3">
+                            <div class="col">
+                                <div class="row row-cols-2">
+                                    <div class="col d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-1.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Flying from</h3>
+                                            <p>Leaving from</p>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-2.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Flying to</h3>
+                                            <p>Going to </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-5 d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-3.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Departure</h3>
+                                            <p>Departure</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 d-flex p-20px">
+                                        <div class="flight-icon me-3">
+                                            <img src="./images/icons/flight-icon-3.svg" alt="">
+                                        </div>
+                                        <div class="flight-details">
+                                            <h3 class="lh-1">Return</h3>
+                                            <p>Add a return date</p>
+                                        </div>
+                                        <div class="flight-search-button bg-primary rounded-circle p-20px ms-2">
+                                            <img src="./images/icons/search-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="stays-tab-pane" role="tabpanel" aria-labelledby="stays-tab"
+                        tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut quos dignissimos nobis?
+                    </div>
+                    <div class="tab-pane fade" id="holidays-tab-pane" role="tabpanel" aria-labelledby="holidays-tab"
+                        tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut quos dignissimos nobis?
+                    </div>
+
+                </div>
+            </div> <!-- END tabs -->
+        </div>
+
+    </section>
+
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"> </script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="vendor/owl/owl.carousel.min.js"></script>
+
+    <!-- JQUERY NICE SELECT JS -->
+    <script src="vendor/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
