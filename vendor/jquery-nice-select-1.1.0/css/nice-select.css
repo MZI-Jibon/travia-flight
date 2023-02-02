@@ -77,9 +77,10 @@
       left: auto;
       right: 0; }
   .nice-select.small {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 700;
     height: 36px;
-    line-height: 34px; }
+    line-height: 38px; }
     .nice-select.small:after {
       height: 4px;
       width: 4px; }

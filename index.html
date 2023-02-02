@@ -56,26 +56,72 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Support</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span> <img src="./images/icons/globe.svg" alt="">
-                                    </span>
-                                    Language
-                                </a>
+                                <div class="language-btn">
+
+                                    <div class="nice-select small right border-0 bg-transparent px-0" tabindex="0">
+                                        <div class=" d-flex align-items-center">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.9987 13.3334C10.9442 13.3334 13.332 10.9456 13.332 8.00004C13.332 5.05452 10.9442 2.66671 7.9987 2.66671C5.05318 2.66671 2.66536 5.05452 2.66536 8.00004C2.66536 10.9456 5.05318 13.3334 7.9987 13.3334ZM7.9987 14.6667C11.6806 14.6667 14.6654 11.6819 14.6654 8.00004C14.6654 4.31814 11.6806 1.33337 7.9987 1.33337C4.3168 1.33337 1.33203 4.31814 1.33203 8.00004C1.33203 11.6819 4.3168 14.6667 7.9987 14.6667Z"
+                                                    fill="#777E91"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M9.16575 12.1178C9.65822 11.1329 10.0013 9.67888 10.0013 8.00004C10.0013 6.3212 9.65822 4.86722 9.16575 3.88228C8.63341 2.81759 8.14467 2.66671 8.0013 2.66671C7.85793 2.66671 7.36919 2.81759 6.83685 3.88228C6.34438 4.86722 6.0013 6.3212 6.0013 8.00004C6.0013 9.67888 6.34438 11.1329 6.83685 12.1178C7.36919 13.1825 7.85793 13.3334 8.0013 13.3334C8.14467 13.3334 8.63341 13.1825 9.16575 12.1178ZM8.0013 14.6667C9.84225 14.6667 11.3346 11.6819 11.3346 8.00004C11.3346 4.31814 9.84225 1.33337 8.0013 1.33337C6.16035 1.33337 4.66797 4.31814 4.66797 8.00004C4.66797 11.6819 6.16035 14.6667 8.0013 14.6667Z"
+                                                    fill="#777E91"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14.6324 8.66671C14.6542 8.44744 14.6654 8.22504 14.6654 8.00004C14.6654 7.77504 14.6542 7.55264 14.6324 7.33337H1.36495C1.34318 7.55264 1.33203 7.77504 1.33203 8.00004C1.33203 8.22504 1.34318 8.44744 1.36495 8.66671H14.6324Z"
+                                                    fill="#777E91"></path>
+                                            </svg>
+                                            <span class="current"> Language </span>
+                                        </div>
+                                        <ul class="list">
+                                            <li data-value="Language" class="option selected focus"> Language </li>
+                                            <li data-value="0" class="option">English</li>
+                                            <li data-value="1" class="option">Turkish</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-
-
-
-
                         </ul>
-                        <div class="d-flex align-items-center">
-                            <button class="btn notification-btn position-relative"> <img src="./images/icons/bell.svg"
-                                    alt="">
-                                <span class="d-block rounded-circle position-absolute top-0 end-0"></span></button>
+
+                        <!-- NOTIFICATION BTN START -->
+                        <div class="dropdown d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <button class="btn dropdown-toggle notification-btn position-relative" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18 15.0233C18 15.5113 17.6043 15.907 17.1163 15.907H0.88372C0.395655 15.907 0 15.5113 0 15.0233C0 14.5352 0.395656 14.1395 0.883721 14.1395H0.9V7.98088C0.9 3.57288 4.527 0 9 0C13.473 0 17.1 3.57288 17.1 7.98088V14.1395H17.1163C17.6043 14.1395 18 14.5352 18 15.0233ZM2.7 14.1395H15.3V7.98088C15.3 4.5494 12.4794 1.76744 9 1.76744C5.5206 1.76744 2.7 4.5494 2.7 7.98088V14.1395ZM6.97604 17.7558C6.73121 17.2608 7.19772 16.7907 7.75 16.7907H10.25C10.8023 16.7907 11.2688 17.2608 11.024 17.7558C10.9155 17.9751 10.7699 18.1773 10.591 18.3529C10.169 18.7672 9.59674 19 9 19C8.40326 19 7.83097 18.7672 7.40901 18.3529C7.23013 18.1773 7.08449 17.9751 6.97604 17.7558Z"
+                                            fill="#777E91" />
+                                    </svg>
+
+                                    <span class="d-block rounded-circle position-absolute top-0 end-0"></span>
+                                </button>
+                                <ul class="dropdown-menu  border-0" style="">
+                                    <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <button class="btn p-0 user-btn ms-3"> <img class="rounded-circle bg-info-subtle "
-                                src="./images/user-avater.png" alt="">
-                        </button>
+                        <!-- NOTIFICATION BTN END -->
+
+                        <!-- USER BTN START -->
+                        <div class="user-btn ms-3">
+                            <div class="dropdown d-flex align-items-center">
+                                <button class="btn p-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="rounded-circle bg-info-subtle " src="./images/user-avater.png" alt="">
+                                </button>
+                                <ul class="dropdown-menu border-0 mt-2" style="">
+                                    <h4 class="p-3">John Doe</h4>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- USER BTN END -->
 
 
                     </div>
@@ -141,8 +187,10 @@
                             <label class="btn " for="one-way-btn">One-way</label><br>
 
 
-                            <select class="btn">
-                                <option data-display="Select">1 adult</option>
+                            <select class="nice-select btn">
+                                <option data-display="1 adult">
+                                    1 adult
+                                </option>
                                 <option value="1">Some option</option>
                                 <option value="2">Another option</option>
                             </select>
@@ -190,8 +238,14 @@
                                             <h3 class="lh-1">Return</h3>
                                             <p>Add a return date</p>
                                         </div>
-                                        <div class="flight-search-button bg-primary rounded-circle p-20px ms-2">
-                                            <img src="./images/icons/search-icon.svg" alt="">
+                                        <div class="flight-search-button travia-btn ms-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14.9056 16.3199C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9056 16.3199ZM16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10Z"
+                                                    fill="#FCFCFD" />
+                                            </svg>
+
                                         </div>
                                     </div>
                                 </div>
@@ -463,302 +517,388 @@
                 <h2>Go somewhere</h2>
                 <p>Let’s go on an adventure</p>
             </div>
-            <div class="product-tab">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <!--  -->
+            <div class="tabs">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z"
+                                    fill="#777E91" />
+                                <path
+                                    d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z"
+                                    fill="#777E91" />
+                            </svg>
 
-                    <!-- PRODUCT 1 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/guille-pozzi-wguqf_tabDM-unsplash 1.png"
-                                class="card-img-top" alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
+                            Home </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z"
+                                    fill="#777E91" />
+                                <path
+                                    d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z"
+                                    fill="#777E91" />
+                            </svg>
 
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
+                            Family-friendly </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z"
+                                    fill="#777E91" />
+                                <path
+                                    d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z"
+                                    fill="#777E91" />
+                            </svg>
+
+                            On sale </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-conatact2-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-conatact2" type="button" role="tab" aria-controls="pills-conatact2"
+                            aria-selected="false">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z"
+                                    fill="#777E91" />
+                                <path
+                                    d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z"
+                                    fill="#777E91" />
+                            </svg>
+
+                            Sub nav </button>
+                    </li>
+                </ul>
+                <div class="tab-content d-block" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+
+                        <div class="product-tab">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+
+                                <!-- PRODUCT 1 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/guille-pozzi-wguqf_tabDM-unsplash 1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
 
                                         </div>
+
                                     </div>
                                 </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
+
+                                <!-- PRODUCT 2 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/guille-pozzi-wguqf_tabDM-unsplash 1-1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- PRODUCT 3 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/landscape 08.png" class="card-img-top"
+                                            alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- PRODUCT 4 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/pexels-jeffrey-czum-3330118 (1) 1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- PRODUCT 5 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/pexels-jess-vide-4321802 1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- PRODUCT 6 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/pexels-marko-klaric-6163875 1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- PRODUCT 7 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/pexels-quang-nguyen-vinh-3355732 1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- PRODUCT 8 -->
+                                <div class="col">
+                                    <div class="card border-0">
+                                        <img src="./images/Product card/pietro-de-grandi-qV2p17GHKbs-unsplash 1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="product-body ">
+                                            <div class="row">
+                                                <div class="product-details col-8 pe-0">
+                                                    <h5 class="product-title mb-0">The grand resort</h5>
+                                                    <p class="product-text">Karineside</p>
+
+                                                </div>
+                                                <div class="product-price col-4 ">
+                                                    <div class="price-box text-center ms-auto">
+                                                        <p class="text-decoration-line-through">$699</p>
+                                                        <p>$548</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="product-rating d-flex justify-content-between">
+                                                <p class="date">
+                                                    Tue, Jul 20 - Fri, Jul 23
+                                                </p>
+                                                <div class="rating d-flex align-items-center ">
+                                                    <img src="./images/star.png" alt="">
+                                                    <p>4.9</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </div>
 
                             </div>
 
-                        </div>
-                    </div>
-
-                    <!-- PRODUCT 2 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/guille-pozzi-wguqf_tabDM-unsplash 1-1.png"
-                                class="card-img-top" alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
-
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
-                                    </div>
-                                </div>
-
+                            <div class="text-center">
+                                <a class="btn" href="#">View all</a>
                             </div>
-
                         </div>
                     </div>
-
-                    <!-- PRODUCT 3 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/landscape 08.png" class="card-img-top" alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
-
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- PRODUCT 4 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/pexels-jeffrey-czum-3330118 (1) 1.png" class="card-img-top"
-                                alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
-
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- PRODUCT 5 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/pexels-jess-vide-4321802 1.png" class="card-img-top"
-                                alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
-
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- PRODUCT 6 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/pexels-marko-klaric-6163875 1.png" class="card-img-top"
-                                alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
-
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- PRODUCT 7 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/pexels-quang-nguyen-vinh-3355732 1.png" class="card-img-top"
-                                alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
-
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- PRODUCT 8 -->
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="./images/Product card/pietro-de-grandi-qV2p17GHKbs-unsplash 1.png"
-                                class="card-img-top" alt="...">
-                            <div class="product-body ">
-                                <div class="row">
-                                    <div class="product-details col-8 pe-0">
-                                        <h5 class="product-title mb-0">The grand resort</h5>
-                                        <p class="product-text">Karineside</p>
-
-                                    </div>
-                                    <div class="product-price col-4 ">
-                                        <div class="price-box text-center ms-auto">
-                                            <p class="text-decoration-line-through">$699</p>
-                                            <p>$548</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="product-rating d-flex justify-content-between">
-                                    <p class="date">
-                                        Tue, Jul 20 - Fri, Jul 23
-                                    </p>
-                                    <div class="rating d-flex align-items-center ">
-                                        <img src="./images/star.png" alt="">
-                                        <p>4.9</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="text-center">
-                    <a class="btn" href="#">View all</a>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet rem
+                        atque fugit!</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet rem
+                        atque fugit!</div>
+                    <div class="tab-pane fade" id="pills-conatact2" role="tabpanel"
+                        aria-labelledby="pills-conatact2-tab" tabindex="0">..fsfsadsfasdjflas;kjdf.</div>
                 </div>
             </div>
+            <!--  -->
+
 
         </div>
     </section>
@@ -782,11 +922,11 @@
                 </div>
 
                 <!--EMAIL AREA  STARTS -->
-                <form action="" class="mb-0 ">
-                    <div class="d-inline-flex  justify-content-between ">
-                        <div class=" d-flex align-items-center justify-content-between">
+                <!-- <form action="" class="mb-0 ">
+                    <div class="d-inline-flex  justify-content-between w-100">
+                        <div class=" d-flex align-items-center justify-content-between w-100">
 
-                            <input type="text" class=" btn btn-oultine-0 text-start rounded-pill  border-0"
+                            <input type="text" class=" btn btn-oultine-0 text-start rounded-pill w-100 border-0"
                                 placeholder="Enter your mail address" name="mail" required>
 
 
@@ -802,7 +942,23 @@
 
                         </div>
                     </div>
-                </form>
+                </form> -->
+
+                <div class="input-group border border-1 rounded-5">
+
+                    <input type="text" class="form-control border-0 rounded-5 shadow-none bg-transparent"
+                        placeholder="Enter your mail address" name="mail">
+
+                    <a href="#" class=" email-btn rounded-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                fill="#FCFCFD" />
+                        </svg>
+
+                    </a>
+
+                </div>
                 <!--EMAIL AREA  ENDS -->
 
             </div>
@@ -836,32 +992,29 @@
                     <a href="#">Jobs</a>
                     <a href="#">Download</a>
                 </div>
-                <div class="col-3 d-flex justify-content-lg-end">
+                <div class="col-3">
 
                     <!--EMAIL AREA  STARTS -->
-                    <form action="" class="mb-0 ">
-
+                   
+                    <div>
                         <h6>Join our community 🔥</h6>
-                        <div class="d-inline-flex  justify-content-between ">
-                            <div class=" d-flex align-items-center justify-content-between">
+                        <div class="input-group border border-1 rounded-5">
 
-                                <input type="text" class=" btn btn-oultine-0 text-start rounded-pill  border-0"
-                                    placeholder="Enter your email" name="mail" required>
+                            <input type="text" class="form-control border-0 rounded-5 shadow-none bg-transparent"
+                                placeholder="Enter your mail address" name="mail">
 
+                            <a href="#" class=" email-btn rounded-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                        fill="#FCFCFD" />
+                                </svg>
 
-                                <a href="#" class=" email-btn">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
-                                            fill="#FCFCFD" />
-                                    </svg>
+                            </a>
 
-                                </a>
-
-                            </div>
                         </div>
-                    </form>
+                    </div>
                     <!--EMAIL AREA  ENDS -->
                 </div>
             </div>
