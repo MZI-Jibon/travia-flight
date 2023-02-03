@@ -196,14 +196,9 @@ nav .notification-btn span {
     background-color: #f6f6f6;
 }
 
-
 /* NAV ENDS */
 
-
 /* HERO SECTION STARTS */
-.hero-section img {
-    z-index: -1;
-}
 
 .hero-section {
     background: linear-gradient(92.61deg, rgba(236, 248, 252, 0.84) 13.1%, rgba(236, 248, 252, 0) 96.07%), url("../images/hero-bg.png");
@@ -240,11 +235,7 @@ nav .notification-btn span {
     margin-top: -220px;
     padding: 40px;
     background: linear-gradient(83.59deg, #FCFCFD 36.52%, rgba(252, 252, 253, 0.83) 98.8%);
-    /* Neutrals/8 */
-
     border: 1px solid #FCFCFD;
-    /* glass/01 */
-
     box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
     backdrop-filter: blur(16px);
 }
@@ -288,14 +279,12 @@ nav .notification-btn span {
 /* ////////// */
 /* Tabs */
 
-
-
 .tab-pane .btn {
 
     border: 2px solid #E6E8EC;
     border-radius: 50rem;
 
-    --bs-btn-color: #23262F;
+    --bs-btn-color: #2f2a23;
     --bs-btn-border-color: #E6E8EC;
     --bs-btn-hover-color: #23262F;
     --bs-btn-hover-bg: #E6E8EC;
@@ -379,8 +368,6 @@ nav .notification-btn span {
     font-size: 12px;
     line-height: 20px;
     color: #23262F;
-
-
 }
 
 
@@ -514,7 +501,7 @@ nav .notification-btn span {
 }
 
 .work-section .row {
-    background-image: url(../images/dash-line.png);
+    background-image: url("../images/dash-line.png");
     background-repeat: no-repeat;
     background-position: 220px 60px;
 }
@@ -526,7 +513,6 @@ nav .notification-btn span {
     background: #F4F5F6;
     border-radius: 24px;
     padding: 80px;
-
 }
 
 .product-section .section-heading {
@@ -687,37 +673,37 @@ input::placeholder {
     height: 32px;
     width: 32px;
     transition: .3s;
-    
+
 }
-.email-btn:hover{
+
+.form-select>div {
+    background: #000;
+}
+
+.email-btn:hover {
     background: #0044ee;
 }
-.input-group{
+
+.email-form {
     border: 2px solid #E6E8EC !important;
     border-radius: 50rem;
     margin-top: 40px;
 }
-.input-group,.email-btn{
+
+.email-form,
+.email-btn {
     display: flex;
     align-items: center;
     border-radius: 50px;
     max-width: 300px;
 }
+
 .form-control {
     padding: 6px 0 6px 16px;
     margin: 4px;
 }
 
-
-
 /* DOWNLOAD SECTION ENDS*/
-
-
-
-
-
-
-
 
 /* Footer STARTS */
 footer {
@@ -736,7 +722,8 @@ footer {
 .footer-top .col.d-flex {
     gap: 32px;
 }
-footer .input-group{
+
+footer .email-form {
     margin-top: 16px;
 }
 
@@ -749,3 +736,5 @@ footer .input-group{
 }
 
 /* Footer ENDS */
+
+

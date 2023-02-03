@@ -19,7 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- JQUERY NICE SELECT JS -->
+    <!-- JQUERY NICE SELECT CSS -->
     <link rel="stylesheet" href="vendor/jquery-nice-select-1.1.0/css/nice-select.css">
 
     <!-- Owl Carousel CSS -->
@@ -101,7 +101,7 @@
 
                                     <span class="d-block rounded-circle position-absolute top-0 end-0"></span>
                                 </button>
-                                <ul class="dropdown-menu  border-0" style="">
+                                <ul class="dropdown-menu  border-0" >
                                     <li><a class="dropdown-item" href="#">Notification 1</a></li>
                                     <li><a class="dropdown-item" href="#">Notification 2</a></li>
                                     <li><a class="dropdown-item" href="#">Notification 3</a></li>
@@ -116,7 +116,7 @@
                                 <button class="btn p-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img class="rounded-circle bg-info-subtle " src="./images/user-avater.png" alt="">
                                 </button>
-                                <ul class="dropdown-menu border-0 mt-2" style="">
+                                <ul class="dropdown-menu border-0 mt-2">
                                     <h4 class="p-3">John Doe</h4>
                                 </ul>
                             </div>
@@ -518,11 +518,11 @@
                 <p>Let’s go on an adventure</p>
             </div>
             <!--  -->
-            <div class="tabs">
+            <div class="tabs position-relative">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        <button class="nav-link active" id="featured-tab" data-bs-toggle="pill"
+                            data-bs-target="#featured" type="button" role="tab" aria-controls="featured"
                             aria-selected="true">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -534,11 +534,11 @@
                                     fill="#777E91" />
                             </svg>
 
-                            Home </button>
+                            Featured </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        <button class="nav-link" id="family-friendly-tab" data-bs-toggle="pill"
+                            data-bs-target="#family-friendly" type="button" role="tab" aria-controls="family-friendly"
                             aria-selected="false">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -553,9 +553,8 @@
                             Family-friendly </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                            aria-selected="false">
+                        <button class="nav-link" id="on-sale-tab" data-bs-toggle="pill" data-bs-target="#on-sale"
+                            type="button" role="tab" aria-controls="on-sale" aria-selected="false">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -569,9 +568,8 @@
                             On sale </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-conatact2-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-conatact2" type="button" role="tab" aria-controls="pills-conatact2"
-                            aria-selected="false">
+                        <button class="nav-link" id="sub-nav-tab" data-bs-toggle="pill" data-bs-target="#sub-nav"
+                            type="button" role="tab" aria-controls="sub-nav" aria-selected="false">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -586,8 +584,8 @@
                     </li>
                 </ul>
                 <div class="tab-content d-block" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab"
+                        tabindex="0">
 
                         <div class="product-tab">
                             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
@@ -887,15 +885,34 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                        tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet rem
-                        atque fugit!</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                        tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet rem
-                        atque fugit!</div>
-                    <div class="tab-pane fade" id="pills-conatact2" role="tabpanel"
-                        aria-labelledby="pills-conatact2-tab" tabindex="0">..fsfsadsfasdjflas;kjdf.</div>
+                    <div class="tab-pane fade" id="family-friendly" role="tabpanel"
+                        aria-labelledby="family-friendly-tab" tabindex="0"> Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus amet rem
+                        atque fugit! </div>
+                    <div class="tab-pane fade" id="on-sale" role="tabpanel" aria-labelledby="on-sale-tab" tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet rem
+                        atque fugit! </div>
+                    <div class="tab-pane fade" id="sub-nav" role="tabpanel" aria-labelledby="sub-nav-tab" tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus amet rem
+                        atque fugit!
+                    </div>
                 </div>
+
+                <!-- select section -->
+                <!-- <div class="input-group position-absolute top-0 end-0">
+                    <select class="form-select shadow-none" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <ul selected class="bg-primary">
+                        <option selected="">Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </ul>
+                    </select>
+                </div> -->
+
+                <!-- select section -->
+
             </div>
             <!--  -->
 
@@ -922,29 +939,8 @@
                 </div>
 
                 <!--EMAIL AREA  STARTS -->
-                <!-- <form action="" class="mb-0 ">
-                    <div class="d-inline-flex  justify-content-between w-100">
-                        <div class=" d-flex align-items-center justify-content-between w-100">
 
-                            <input type="text" class=" btn btn-oultine-0 text-start rounded-pill w-100 border-0"
-                                placeholder="Enter your mail address" name="mail" required>
-
-
-                            <a href="#" class=" email-btn">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
-                                        fill="#FCFCFD" />
-                                </svg>
-
-                            </a>
-
-                        </div>
-                    </div>
-                </form> -->
-
-                <div class="input-group border border-1 rounded-5">
+                <div class="input-group email-form border border-1 rounded-5">
 
                     <input type="text" class="form-control border-0 rounded-5 shadow-none bg-transparent"
                         placeholder="Enter your mail address" name="mail">
@@ -976,39 +972,35 @@
     <!-- FOOTER STARTS -->
     <footer class="container px-5">
         <div class="footer-top mb-5">
-            <div class="row">
-                <div class="col-3">
+            <div class="row row-cols-1 row-cols-md-5 g-4 g-lg-0 ">
+                <div class="col-12 col-lg-3">
                     <a href="#"><img src="./images/travia-logo.png" alt=""></a>
                 </div>
-                <div class="col d-flex flex-column">
+                <div class="col col-lg-2 d-flex flex-column">
                     <a href="#">About</a>
                     <a href="#">Projects</a>
                 </div>
-                <div class="col d-flex flex-column">
+                <div class="col col-lg-2 d-flex flex-column">
                     <a href="#">What We Do</a>
                     <a href="#">Press</a>
                 </div>
-                <div class="col d-flex flex-column">
+                <div class="col col-lg-2 d-flex flex-column">
                     <a href="#">Jobs</a>
                     <a href="#">Download</a>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
 
                     <!--EMAIL AREA  STARTS -->
-                   
+
                     <div>
                         <h6>Join our community 🔥</h6>
-                        <div class="input-group border border-1 rounded-5">
+                        <div class="input-group email-form border border-1 rounded-5">
 
-                            <input type="text" class="form-control border-0 rounded-5 shadow-none bg-transparent"
-                                placeholder="Enter your mail address" name="mail">
+                            <input type="text" class="form-control border-0 rounded-5 shadow-none bg-transparent" placeholder="Enter your mail address" name="mail">
 
                             <a href="#" class=" email-btn rounded-circle">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
-                                        fill="#FCFCFD" />
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z" fill="#FCFCFD"></path>
                                 </svg>
 
                             </a>
